@@ -1,0 +1,14 @@
+name = "anxin-assist"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+
+[[durable_objects.bindings]]
+name = "HUB"
+class_name = "Hub"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["Hub"]
+
+[vars]
+AX_SECRET = "dev-secret-change-me"
